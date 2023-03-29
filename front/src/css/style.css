@@ -1,0 +1,184 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  color: #000;
+  text-align: center;
+  width: 100%;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  transition: 0.3s;
+  font-weight: bold;
+}
+a:hover {
+  color: #999;
+}
+
+h2 {
+  font-size: 26px;
+  color: #000;
+  margin: 10px 0px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  border: 0px solid #bbb;
+  box-shadow: 0px 2px 2px #888888;
+  font-family: "Open Sans", sans-serif;
+  background-color: #e8f0fe;
+}
+input:hover {
+  background-color: #ddd;
+  border-width: 0px;
+}
+
+button,
+label {
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+  height: 50px;
+  padding: 15px 25px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  background-color: #1c3366;
+  border-radius: 5px;
+  box-shadow: 0 4px #bbb;
+  transition: 0.3s;
+}
+button:hover,
+label:hover {
+  background-color: #465a83;
+}
+button:active,
+label:active {
+  background-color: #465a83;
+  box-shadow: 0 0px #aaa;
+  transform: translateY(2px);
+}
+
+main {
+  width: 75%;
+  margin: auto;
+  padding-top: 20px;
+}
+
+header {
+  height: 100px;
+  background-color: #1c3366;
+  font-size: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+}
+header nav {
+  height: 75px;
+  margin-top: 25px;
+}
+header nav .logo {
+  width: 200px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+}
+header nav a {
+  text-decoration: none;
+  padding: 30px;
+  color: #fff;
+  font-size: 22px;
+}
+header nav .bag-icon {
+  width: 35px;
+  margin-top: -5px;
+}
+header nav .addProdBtn {
+  position: absolute;
+  right: 200px;
+  top: 25px;
+  background-color: #fff;
+  color: #000;
+  box-shadow: none;
+}
+header nav .addProdBtn:hover {
+  border-radius: 0px;
+  color: #666;
+  box-shadow: 0px 0px 5px #000;
+}
+header nav .logoutBtn,
+header nav .loginBtn {
+  position: absolute;
+  right: 20px;
+  top: 25px;
+  background-color: #fff;
+  color: #000;
+  box-shadow: none;
+}
+header nav .logoutBtn:hover,
+header nav .loginBtn:hover {
+  border-radius: 0px;
+  color: #666;
+  box-shadow: 0px 0px 5px #000;
+}
+
+/* ---------- Framsida ---------- */
+.excerpt {
+  max-width: 230px;
+}
+.excerpt img {
+  width: 50%;
+}
+.excerpt p {
+  text-align: left;
+  padding: 10px;
+}
+
+/* ---------- Loading ---------- */
+.loading {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  margin-top: 200px;
+}
+
+/* ---------- Desktop ---------- */
+/* ---------- Desktop ---------- */
+/* ---------- Desktop ---------- */
+@media only screen and (min-width: 1000px) {
+  main.index-page {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+  }
+  .excerpt {
+    width: 25%;
+    margin: 25px;
+  }
+  .excerpt img {
+    width: 100%;
+  }
+  main.show-post {
+    width: 66%;
+  }
+}/*# sourceMappingURL=style.css.map */

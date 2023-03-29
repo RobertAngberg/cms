@@ -1,0 +1,64 @@
+main.add-product,
+main.edit-product {
+  width: 66%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main.add-product .flexy,
+main.edit-product .flexy {
+  width: 100%;
+  display: flex;
+}
+main.add-product .main-section,
+main.edit-product .main-section {
+  width: 64%;
+}
+main.add-product .side-section,
+main.edit-product .side-section {
+  width: 33%;
+  margin-left: 3%;
+}
+main.add-product .input-title,
+main.edit-product .input-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+main.add-product input.filePicker,
+main.edit-product input.filePicker {
+  display: none;
+}
+main.add-product label,
+main.edit-product label {
+  width: 100%;
+  padding: 0px 40px;
+  margin-right: 30px;
+  white-space: nowrap;
+}
+main.add-product .category-picker,
+main.edit-product .category-picker {
+  display: flex;
+  justify-content: center;
+}
+main.add-product .checkbox-div,
+main.edit-product .checkbox-div {
+  justify-content: center;
+  vertical-align: middle;
+  align-items: center;
+  padding: 10px;
+}
+main.add-product input[type=checkbox],
+main.edit-product input[type=checkbox] {
+  box-shadow: none;
+  width: 20px;
+  height: 20px;
+}
+main.add-product .ql-editor,
+main.edit-product .ql-editor {
+  min-height: 250px;
+  background-color: #e8f0fe;
+}
+main.add-product .ql-toolbar button,
+main.edit-product .ql-toolbar button {
+  box-shadow: 0px 2px 2px #888888;
+}/*# sourceMappingURL=AddEditProduct.css.map */

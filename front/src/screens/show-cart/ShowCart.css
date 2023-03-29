@@ -1,0 +1,26 @@
+.cart-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.cart-column-sku {
+  font-size: 16px;
+  margin: 0px 30px 0px 20px;
+  min-width: 200px;
+}
+
+.cart-column-qty {
+  text-align: center;
+  min-width: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#cart-sum {
+  width: 200px;
+  margin: -30px auto 40px;
+  text-align: center;
+}/*# sourceMappingURL=ShowCart.css.map */

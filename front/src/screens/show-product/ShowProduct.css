@@ -1,0 +1,47 @@
+main.show-post {
+  text-align: center;
+}
+main.show-post .flexbox-top {
+  display: flex;
+  flex-wrap: wrap;
+}
+main.show-post .flexbox-top .image {
+  width: 45%;
+  margin-right: 10%;
+}
+main.show-post .flexbox-top .image img {
+  width: 100%;
+  text-align: left;
+}
+main.show-post .flexbox-top .information {
+  text-align: left;
+  width: 45%;
+}
+main.show-post .flexbox-top .information h1 {
+  font-size: 30px;
+  margin: 5px 0px;
+}
+main.show-post .flexbox-top .information .price {
+  font-size: 30px;
+  margin: 0;
+}
+main.show-post .flexbox-top .information select {
+  width: 75px;
+  height: 50px;
+  font-size: 20px;
+  padding: 10px;
+  margin: 15px 10px 15px 0px;
+  border-radius: 5px;
+}
+main.show-post .flexbox-top .image-gallery-thumbnail {
+  height: -moz-max-content;
+  height: max-content;
+  box-shadow: none;
+  margin: 10px;
+}
+main.show-post .editBtn {
+  position: absolute;
+  top: 120px;
+  right: 20px;
+  margin-bottom: 200px;
+}/*# sourceMappingURL=ShowProduct.css.map */

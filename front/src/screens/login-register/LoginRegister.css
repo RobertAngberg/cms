@@ -1,0 +1,6 @@
+@media only screen and (min-width: 1000px) {
+  main.login,
+  main.register {
+    width: 33%;
+  }
+}/*# sourceMappingURL=LoginRegister.css.map */

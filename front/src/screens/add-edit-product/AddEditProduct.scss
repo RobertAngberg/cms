@@ -1,0 +1,53 @@
+main.add-product,
+main.edit-product {
+  width: 66%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .flexy {
+    width: 100%;
+    display: flex;
+  }
+  .main-section {
+    width: 64%;
+  }
+  .side-section {
+    width: 33%;
+    margin-left: 3%;
+  }
+  .input-title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  input.filePicker {
+    display: none;
+  }
+  label {
+    width: 100%;
+    padding: 0px 40px;
+    margin-right: 30px;
+    white-space: nowrap;
+  }
+  .category-picker {
+    display: flex;
+    justify-content: center;
+  }
+  .checkbox-div {
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+    padding: 10px;
+  }
+  input[type="checkbox"] {
+    box-shadow: none;
+    width: 20px;
+    height: 20px;
+  }
+  .ql-editor {
+    min-height: 250px;
+    background-color: #e8f0fe;
+  }
+  .ql-toolbar button {
+    box-shadow: 0px 2px 2px #888888;
+  }
+}
