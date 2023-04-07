@@ -41,6 +41,6 @@
     "workbox-webpack-plugin": "^6.5.4"
   },
   "dependencies": {
-    "react-scripts": "^5.0.1"
+    "react-scripts": "^2.1.3"
   }
 }
