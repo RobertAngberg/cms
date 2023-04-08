@@ -223,7 +223,9 @@ app.get("/post/:slug", async (req, res) => {
 /* ---------- DB connect ---------- */
 
 mongoose.set("strictQuery", false);
-mongoose.connect(process.env.mongo);
+mongoose.connect(
+  `mongodb+srv://RobertAngberg:<password>@cluster0.a6cmlbg.mongodb.net/?retryWrites=true&w=majority`
+);
 
 /* ---------- Lyssna ---------- */
 
