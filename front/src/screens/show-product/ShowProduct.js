@@ -27,7 +27,7 @@ export default function ShowProduct() {
       ...cart,
       {
         sku: productData[0].title,
-        mainImage: `/uploads/${productData[0].mainImage}`,
+        mainImage: `https://robertscv.se/uploads/${productData[0].mainImage}`,
         price: productData[0].price,
         qty: qty.replace("Option ", ""),
       },
@@ -43,7 +43,7 @@ export default function ShowProduct() {
   }
 
   useEffect(() => {
-    fetch(`/post/${id}`).then((response) => {
+    fetch(`https://ms-rgk2.onrender.com/post/post/${id}`).then((response) => {
       response.json().then((productData) => {
         setProductData(productData);
         setGalleryImages([
