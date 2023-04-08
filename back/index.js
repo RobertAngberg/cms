@@ -222,7 +222,8 @@ app.get("/post/:slug", async (req, res) => {
 
 /* ---------- DB connect ---------- */
 
-const url = "asdf";
+const url =
+  "mongodb+srv://RobertAngberg:Grisen55@cluster0.a6cmlbg.mongodb.net/?retryWrites=true&w=majority";
 mongoose.set("strictQuery", false);
 mongoose.connect(url);
 
