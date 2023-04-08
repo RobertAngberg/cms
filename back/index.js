@@ -8,6 +8,7 @@ import fs from "fs";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import cookieParser from "cookie-parser";
+import cors from "cors";
 
 const uploadMiddleware = multer({ dest: "uploads/" });
 const app = express();
@@ -18,13 +19,15 @@ app.use(cookieParser());
 const salt = bcrypt.genSaltSync(10);
 const secret = "hjkjklkjhbgvfcvfbgnjkij";
 
-app.use(
-  cors({
-    origin:
-      "https://64316c9cdb504a283736d6de--ephemeral-kulfi-b48b50.netlify.app/",
-  })
-);
-app.options("*", cors());
+// app.use(
+//   cors({
+//     origin:
+//       "https://64316c9cdb504a283736d6de--ephemeral-kulfi-b48b50.netlify.app/",
+//   })
+// );
+// app.options("*", cors());
+
+app.use(cors());
 
 /* ---------- Regga användare ---------- */
 
