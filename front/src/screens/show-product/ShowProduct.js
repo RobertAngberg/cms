@@ -43,7 +43,7 @@ export default function ShowProduct() {
   }
 
   useEffect(() => {
-    fetch(`https://ms-rgk2.onrender.com/post/post/${id}`).then((response) => {
+    fetch(`https://ms-rgk2.onrender.com/post/${id}`).then((response) => {
       response.json().then((productData) => {
         setProductData(productData);
         setGalleryImages([
