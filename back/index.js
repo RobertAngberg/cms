@@ -18,6 +18,14 @@ app.use(cookieParser());
 const salt = bcrypt.genSaltSync(10);
 const secret = "hjkjklkjhbgvfcvfbgnjkij";
 
+app.use(
+  cors({
+    origin:
+      "https://64316c9cdb504a283736d6de--ephemeral-kulfi-b48b50.netlify.app/",
+  })
+);
+app.options("*", cors());
+
 /* ---------- Regga användare ---------- */
 
 app.post("/register", async (req, res) => {
