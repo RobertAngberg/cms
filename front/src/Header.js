@@ -8,7 +8,7 @@ export default function Header() {
   const { setUserInfo, userInfo } = useContext(UserContext);
 
   useEffect(() => {
-    fetch("/profile", {
+    fetch("https://ms-rgk2.onrender.com/profile", {
       credentials: "include",
     }).then((response) => {
       response.json().then((userInfo) => {
@@ -18,7 +18,7 @@ export default function Header() {
   }, [setUserInfo]);
 
   function logout() {
-    fetch("/logout", {
+    fetch("https://ms-rgk2.onrender.com/logout", {
       credentials: "include",
       method: "POST",
     });
