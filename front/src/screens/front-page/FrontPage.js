@@ -2,7 +2,7 @@ import Excerpt from "./Excerpt.js";
 import useFetch from "../../useFetch.js";
 
 export default function FrontPage() {
-  const [posts] = useFetch("/post");
+  const [posts] = useFetch("https://ms-rgk2.onrender.com/post");
 
   if (!posts) return <div className="loading">Loading...</div>;
 
