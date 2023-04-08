@@ -48,20 +48,20 @@ export default function ShowProduct() {
         setProductData(productData);
         setGalleryImages([
           {
-            original: `/uploads/${productData[0].mainImage}`,
-            thumbnail: `/uploads/${productData[0].mainImage}`,
+            original: `https://robertscv.se/uploads/${productData[0].mainImage}`,
+            thumbnail: `https://robertscv.se/uploads/${productData[0].mainImage}`,
           },
           {
-            original: `/uploads/${productData[0].galleryImage1}`,
-            thumbnail: `/uploads/${productData[0].galleryImage1}`,
+            original: `https://robertscv.se/uploads/${productData[0].galleryImage1}`,
+            thumbnail: `https://robertscv.se/uploads/${productData[0].galleryImage1}`,
           },
           {
-            original: `/uploads/${productData[0].galleryImage2}`,
-            thumbnail: `/uploads/${productData[0].galleryImage2}`,
+            original: `https://robertscv.se/uploads/${productData[0].galleryImage2}`,
+            thumbnail: `https://robertscv.se/uploads/${productData[0].galleryImage2}`,
           },
           {
-            original: `/uploads/${productData[0].galleryImage3}`,
-            thumbnail: `/uploads/${productData[0].galleryImage3}`,
+            original: `https://robertscv.se/uploads/${productData[0].galleryImage3}`,
+            thumbnail: `https://robertscv.se/uploads/${productData[0].galleryImage3}`,
           },
         ]);
       });
