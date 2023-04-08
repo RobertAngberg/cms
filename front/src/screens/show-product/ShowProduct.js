@@ -84,7 +84,7 @@ export default function ShowProduct() {
       {/* Kolla om inloggad, isåfall visa redigera-knapp */}
       {userInfo.id === productData[0].author._id && (
         <div className="edit-row">
-          <Link to={`https://ms-rgk2.onrender.com/edit/${productData[0].id}`}>
+          <Link to={`/edit/${productData[0].id}`}>
             <button className="editBtn" type="button">
               Ändra produkt
             </button>
