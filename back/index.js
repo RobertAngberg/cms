@@ -32,6 +32,7 @@ app.use(cors());
 const whitelist = [
   "http://localhost:3000",
   "https://ephemeral-kulfi-b48b50.netlify.app/",
+  "https://ms-rgk2.onrender.com/",
 ];
 
 // ✅ Enable pre-flight requests
