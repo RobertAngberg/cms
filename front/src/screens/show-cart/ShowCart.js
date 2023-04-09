@@ -53,11 +53,11 @@ export default function ShowCart() {
               {e.price * e.qty}kr
             </div>
             <div className="cart-column-qty">
-              <button id={e.sku} onClick={(ev) => btnIncreaseClicked(e.sku)}>
+              <button id={e.sku} onClick={(ev) => btnIncreaseClicked(ev.sku)}>
                 +
               </button>
               {e.qty}
-              <button id={e.sku} onClick={(ev) => btnDecreaseClicked(e.sku)}>
+              <button id={e.sku} onClick={(ev) => btnDecreaseClicked(ev.sku)}>
                 -
               </button>
             </div>
