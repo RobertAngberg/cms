@@ -59,7 +59,7 @@ export default function Header() {
 
         {!username && (
           <>
-            <Link to="/login">
+            <Link to="https://ms-rgk2.onrender.com/login">
               <button className="loginBtn">Logga in</button>
             </Link>
           </>
