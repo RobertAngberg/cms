@@ -35,7 +35,7 @@ const whitelist = [
   "https://ms-rgk2.onrender.com/",
 ];
 
-// ✅ Enable pre-flight requests
+// ✅ Enable pre-flight requests asdf
 app.options("*", cors());
 
 const corsOptions = {
