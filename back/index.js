@@ -48,6 +48,8 @@ const corsOptions = {
   },
 };
 
+app.use(cors(corsOptions));
+
 /* ---------- Regga användare ---------- */
 
 app.post("/register", async (req, res) => {
