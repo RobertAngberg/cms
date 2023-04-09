@@ -29,6 +29,25 @@ const secret = "hjkjklkjhbgvfcvfbgnjkij";
 
 app.use(cors());
 
+const whitelist = [
+  "http://localhost:3000",
+  "https://ephemeral-kulfi-b48b50.netlify.app/",
+];
+
+// ✅ Enable pre-flight requests
+app.options("*", cors());
+
+const corsOptions = {
+  credentials: true,
+  origin: (origin, callback) => {
+    if (whitelist.indexOf(origin) !== -1 || !origin) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+};
+
 /* ---------- Regga användare ---------- */
 
 app.post("/register", async (req, res) => {

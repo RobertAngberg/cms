@@ -9,6 +9,7 @@ export default function ShowCart() {
   let [sum, setSum] = useState(0);
 
   function btnIncreaseClicked(e) {
+    console.log(e);
     // e är sku-namnet
     // grabba elementet/objectet med det sku-namnet och öka sen qty
     const result = cart.find((element) => element.sku === e);
@@ -53,11 +54,11 @@ export default function ShowCart() {
               {e.price * e.qty}kr
             </div>
             <div className="cart-column-qty">
-              <button id={e.sku} onClick={(ev) => btnIncreaseClicked(ev.sku)}>
+              <button id={e.sku} onClick={(ev) => btnIncreaseClicked(e.sku)}>
                 +
               </button>
               {e.qty}
-              <button id={e.sku} onClick={(ev) => btnDecreaseClicked(ev.sku)}>
+              <button id={e.sku} onClick={(ev) => btnDecreaseClicked(e.sku)}>
                 -
               </button>
             </div>

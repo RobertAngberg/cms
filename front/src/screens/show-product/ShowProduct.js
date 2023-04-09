@@ -70,7 +70,6 @@ export default function ShowProduct() {
     if (cart) {
       setCart(cart);
     }
-    console.log(cart);
   }, [id]);
 
   useEffect(() => {
