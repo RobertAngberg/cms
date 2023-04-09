@@ -19,36 +19,14 @@ app.use(cookieParser());
 const salt = bcrypt.genSaltSync(10);
 const secret = "hjkjklkjhbgvfcvfbgnjkij";
 
-// app.use(
-//   cors({
-//     origin:
-//       "https://64316c9cdb504a283736d6de--ephemeral-kulfi-b48b50.netlify.app/",
-//   })
-// );
-// app.options("*", cors());
-// app.use(cors());
-
-const whitelist = [
-  "http://localhost:3000",
-  "https://ephemeral-kulfi-b48b50.netlify.app/",
-  "https://ms-rgk2.onrender.com/",
-];
-
-// ✅ Enable pre-flight requests asdf
+app.use(
+  cors({
+    origin: "https://ephemeral-kulfi-b48b50.netlify.app/",
+  })
+);
 app.options("*", cors());
 
-const corsOptions = {
-  credentials: true,
-  origin: (origin, callback) => {
-    if (whitelist.indexOf(origin) !== -1 || !origin) {
-      callback(null, true);
-    } else {
-      callback(new Error("Not allowed by CORS"));
-    }
-  },
-};
-
-app.use(cors(corsOptions));
+app.use(cors());
 
 /* ---------- Regga användare ---------- */
 
@@ -254,6 +232,8 @@ app.get("/post/:slug", async (req, res) => {
 
 /* ---------- DB connect ---------- */
 
+const url =
+  "mongodb+srv://RobertAngberg:Grisen55@cluster0.a6cmlbg.mongodb.net/?retryWrites=true&w=majority";
 mongoose.set("strictQuery", false);
 mongoose.connect(process.env.MONGO);
 
