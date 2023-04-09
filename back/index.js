@@ -26,8 +26,7 @@ const secret = "hjkjklkjhbgvfcvfbgnjkij";
 //   })
 // );
 // app.options("*", cors());
-
-app.use(cors());
+// app.use(cors());
 
 const whitelist = [
   "http://localhost:3000",
