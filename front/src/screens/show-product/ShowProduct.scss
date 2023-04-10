@@ -1,26 +1,43 @@
-main.show-post {
+main.show-product {
   text-align: center;
   .flexbox-top {
     display: flex;
     flex-wrap: wrap;
-    .image {
-      width: 45%;
+    .image-column {
+      width: 40%;
       margin-right: 10%;
+      .image-gallery-thumbnail {
+        height: max-content;
+        box-shadow: none;
+        margin: 10px;
+      }
+      .image-gallery-image {
+        height: 400px;
+      }
     }
-    .image img {
-      width: 100%;
-      text-align: left;
-    }
-    .information {
+    .information-column {
       text-align: left;
       width: 45%;
       h1 {
         font-size: 30px;
         margin: 5px 0px;
       }
+      .flexbox {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        // Hackigt här, kan inte fixa på annat sätt...
+        .text-välj-antal {
+          margin-left: -160px;
+          margin-right: -120px;
+        }
+        .select-quantity {
+          margin-right: -120px;
+        }
+      }
       .price {
         font-size: 30px;
-        margin: 0;
+        margin: 0px 0px 30px;
       }
       select {
         width: 75px;
@@ -30,19 +47,13 @@ main.show-post {
         margin: 15px 10px 15px 0px;
         border-radius: 5px;
       }
-      // Använd samma .flexbox tror jag, för qty chooser
-    }
-    .image-gallery-thumbnail {
-      height: max-content;
-      box-shadow: none;
-      margin: 10px;
-      // border: none;
     }
   }
-  .editBtn {
-    position: absolute;
-    top: 120px;
-    right: 20px;
-    margin-bottom: 200px;
-  }
+}
+
+.editBtn {
+  position: absolute;
+  top: 110px;
+  right: 10px;
+  margin-bottom: 2200px;
 }

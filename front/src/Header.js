@@ -8,7 +8,7 @@ export default function Header() {
   const { setUserInfo, userInfo } = useContext(UserContext);
 
   useEffect(() => {
-    fetch("https://ms-rgk2.onrender.com/profile", {
+    fetch("/profile", {
       credentials: "include",
     }).then((response) => {
       response.json().then((userInfo) => {
@@ -18,7 +18,7 @@ export default function Header() {
   }, [setUserInfo]);
 
   function logout() {
-    fetch("https://ms-rgk2.onrender.com/logout", {
+    fetch("/logout", {
       credentials: "include",
       method: "POST",
     });
@@ -48,18 +48,18 @@ export default function Header() {
         {username && (
           <>
             <Link to="/add-product">
-              <button className="addProdBtn">Lägg till produkt</button>
+              <button className="addProdBtn">Lägg till</button>
             </Link>
 
             <button className="logoutBtn" onClick={logout}>
-              Logga ut ({username})
+              Logga ut
             </button>
           </>
         )}
 
         {!username && (
           <>
-            <Link to="https://ms-rgk2.onrender.com/login">
+            <Link to="/login">
               <button className="loginBtn">Logga in</button>
             </Link>
           </>

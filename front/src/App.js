@@ -10,6 +10,7 @@ import LoginPage from "./screens/login-register/LoginPage";
 import RegisterPage from "./screens/login-register/RegisterPage";
 import ShowCart from "./screens/show-cart/ShowCart";
 import Checkout from "./screens/checkout/Checkout";
+import Thanks from "./screens/thanks/Thanks";
 import CatMID from "./screens/categories/CatMID";
 import CatMH2 from "./screens/categories/CatMH2";
 import CatSTX from "./screens/categories/CatSTX";
@@ -29,6 +30,7 @@ export default function App() {
           <Route path="/edit/:id" element={<EditPost />} />
           <Route path="/show-cart" element={<ShowCart />} />
           <Route path="/checkout" element={<Checkout />} />
+          <Route path="/thanks" element={<Thanks />} />
           <Route path="/mid" element={<CatMID />} />
           <Route path="/mh2" element={<CatMH2 />} />
           <Route path="/stx" element={<CatSTX />} />

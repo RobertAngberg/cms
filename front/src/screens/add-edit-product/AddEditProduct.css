@@ -22,7 +22,11 @@ main.edit-product .side-section {
 main.add-product .input-title,
 main.edit-product .input-title {
   font-size: 24px;
-  font-weight: bold;
+}
+main.add-product .price,
+main.edit-product .price {
+  width: 33%;
+  margin-bottom: 20px;
 }
 main.add-product input.filePicker,
 main.edit-product input.filePicker {

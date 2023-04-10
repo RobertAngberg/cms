@@ -17,7 +17,10 @@ main.edit-product {
   }
   .input-title {
     font-size: 24px;
-    font-weight: bold;
+  }
+  .price {
+    width: 33%;
+    margin-bottom: 20px;
   }
   input.filePicker {
     display: none;

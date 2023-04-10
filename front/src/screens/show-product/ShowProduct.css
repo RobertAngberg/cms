@@ -1,31 +1,49 @@
-main.show-post {
+@charset "UTF-8";
+main.show-product {
   text-align: center;
 }
-main.show-post .flexbox-top {
+main.show-product .flexbox-top {
   display: flex;
   flex-wrap: wrap;
 }
-main.show-post .flexbox-top .image {
-  width: 45%;
+main.show-product .flexbox-top .image-column {
+  width: 40%;
   margin-right: 10%;
 }
-main.show-post .flexbox-top .image img {
-  width: 100%;
-  text-align: left;
+main.show-product .flexbox-top .image-column .image-gallery-thumbnail {
+  height: -moz-max-content;
+  height: max-content;
+  box-shadow: none;
+  margin: 10px;
 }
-main.show-post .flexbox-top .information {
+main.show-product .flexbox-top .image-column .image-gallery-image {
+  height: 400px;
+}
+main.show-product .flexbox-top .information-column {
   text-align: left;
   width: 45%;
 }
-main.show-post .flexbox-top .information h1 {
+main.show-product .flexbox-top .information-column h1 {
   font-size: 30px;
   margin: 5px 0px;
 }
-main.show-post .flexbox-top .information .price {
-  font-size: 30px;
-  margin: 0;
+main.show-product .flexbox-top .information-column .flexbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
-main.show-post .flexbox-top .information select {
+main.show-product .flexbox-top .information-column .flexbox .text-välj-antal {
+  margin-left: -160px;
+  margin-right: -120px;
+}
+main.show-product .flexbox-top .information-column .flexbox .select-quantity {
+  margin-right: -120px;
+}
+main.show-product .flexbox-top .information-column .price {
+  font-size: 30px;
+  margin: 0px 0px 30px;
+}
+main.show-product .flexbox-top .information-column select {
   width: 75px;
   height: 50px;
   font-size: 20px;
@@ -33,15 +51,10 @@ main.show-post .flexbox-top .information select {
   margin: 15px 10px 15px 0px;
   border-radius: 5px;
 }
-main.show-post .flexbox-top .image-gallery-thumbnail {
-  height: -moz-max-content;
-  height: max-content;
-  box-shadow: none;
-  margin: 10px;
-}
-main.show-post .editBtn {
+
+.editBtn {
   position: absolute;
-  top: 120px;
-  right: 20px;
-  margin-bottom: 200px;
+  top: 110px;
+  right: 10px;
+  margin-bottom: 2200px;
 }/*# sourceMappingURL=ShowProduct.css.map */

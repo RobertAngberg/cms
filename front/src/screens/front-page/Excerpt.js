@@ -13,7 +13,7 @@ export default function Excerpt({
   return (
     <div className="excerpt">
       <Link to={`/post/${slug}`}>
-        <img src={"https://robertscv.se/uploads/" + mainImage} alt="" />
+        <img src={"/uploads/" + mainImage} alt="" />
       </Link>
       <Link to={`/post/${slug}`}>
         <h2>{title}</h2>
